@@ -1,0 +1,13 @@
+<h3>Fiche de contact</h3>
+
+<div><img src="{{User.photo}}"></div>
+<div>Nom : {{User.name}}</div>
+<div>Prénom : {{User.firstName}}</div>
+<div>{{quote}}</div>
+<div><input [(ngModel)]="quote" /></div>
+
+<div><button (click)="toggle()">{{buttonName}}</button></div>
+
+<ng-container *ngIf="show">
+  <div>{{User.age}}</div>
+</ng-container>
